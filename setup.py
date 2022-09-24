@@ -1,9 +1,15 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
+import codecs
+import os
+
+VERSION='0.0.1'
+DESCRIPTION='A basic hello package'
+LONG_DESCRIPTION='A basic hello package long desc'
 
 setup(name='packagename',
       packages = ['chipackage'],
-      version='0.1',
-      description='Brief Description HERE',
+      version=VERSION,
+      description=DESCRIPTION,
       url='https://github.com/bhargabganguli/chipackage',
       download_url = 'https://github.com/bhargabganguli/chipackage/archive/0.1.tar.gz', #FILL IN LATER
       author='Bhargab',
@@ -11,7 +17,7 @@ setup(name='packagename',
       keywords = ['keyowrd1', 'keyword2', 'keyword3'],
       license='MIT', #YOUR LICENSE HERE!
 
-      install_requires=['pandas','numpy',],  #YOUR DEPENDENCIES HERE
+      install_requires=[],  #YOUR DEPENDENCIES HERE
   
 
       classifiers=[
